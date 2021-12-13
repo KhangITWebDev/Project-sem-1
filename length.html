@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script type="text/javascript" src="./js/length.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  </script>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/logo/Metriclogo.png" height="50" width="300" alt="Conversion">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-home mr-1"></i></i>Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-exchange-alt mr-1"></i>
+                
+                Conversion
+              </a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="area.html">Area</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="length.html">Length</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="volume.html">Volume</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="mass.html">Mass</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="temperature.html"></i>Temperature</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="currency.html"></i>Currency</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us"><i class="far fa-address-card mr-1"></i>Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq"><i class="fas fa-question mr-1"></i>FAQs</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    <!-- End navbar -->
+    <!-- banner -->
+    <div class="banner">
+      <div id="slide" class="carousel" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slide" data-slide-to="0" class="active"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+          <li data-target="#slide" data-slide-to="4"></li>
+          <li data-target="#slide" data-slide-to="5"></li>
+          <li data-target="#slide" data-slide-to="6"></li>
+          <li data-target="#slide" data-slide-to="7"></li>
+        </ul>
+        <div class="carousel-inner" style="text-align: center;">
+          <div class="carousel-item active">
+            <img src="./images/banner/background-toppage.png" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/background-site.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/phusi.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/img15.png" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/metric-conversion.png" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/metric-conversion.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/newyork.jfif" alt="" class="img-fluid">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner/metric.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function () {
+$('.carousel').carousel({
+interval: 2000
+})
+});
+</script>
+<!-- link -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="area.html"><i class="fas fa-pencil-alt mr-1"></i>Area</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="length.html"><i class="fas fa-ruler mr-1"></i>Length</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="volume.html"><i class="fas fa-cubes mr-1"></i>Volume</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="mass.html"><i class="fas fa-balance-scale mr-1"></i>Mass</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="temperature.html"><i class="fas fa-thermometer-three-quarters mr-1"></i>Temperature</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="currency.html"><i class="fas fa-dollar-sign mr-1"></i>Currency</a>
+    </li>
+  </ul>
+  <!-- <form class="form-inline ml-auto">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success btn2" type="submit">Search</button>
+  </form> -->
+</div>
+</nav>
+<!-- end link -->
+<!-- Length page -->
+<div class="container-fluid mt-3 convert-page">
+<div class="row justify-content-center ">
+  <div class="col-8">
+    <div class="row ">
+      <div class="col-6">
+        <a class="btn btn-primary mb-3" type="button" href="" id="click1">Inches to Millimeters</a>
+      </div>
+      <div class="col-6">
+        <a class="btn btn-primary mb-3" type="button" href="#" id="click2">Feet to Meters</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <a class="btn btn-primary mb-3" type="button" href="#" id="click3">Yards to Meters</a>
+      </div>
+      <div class="col-6">
+        <a class="btn btn-primary mb-3" type="button" href="#" id="click4">Miles to Kilometers</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<hr class="border-dark" width="95%">
+<!-- Inches to Milimeter -->
+<div class="container-fluid mt-3">
+<div class="row justify-content-center">
+<div class="col-6 row-content">
+  <table class="" id="convert1">
+    <tr class="form-group">
+      <td>From</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" id="input_number" class="form-control h-75" onkeyup="myFunctionInch()"></td>
+      <td class="">Inches</td>
+    </tr>
+    <tr class="form-group">
+      <td>To</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" id="result_number" class="form-control h-75" onkeyup="myInfoMilimeter()"></td>
+      <td class="">Milimeter</td>
+    </tr>
+  </table>
+  <!-- Feets to Meters -->
+  <table class="" id="convert2">
+    <tr class="form-group">
+      <td>From</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75" id="input_number_feet" onkeyup="myFunctionFeet()"></td>
+      <td class="">Feets</td>
+    </tr>
+    <tr class="form-group">
+      <td>To</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75" id="result_number_meter" onkeyup="myInfoMeter()"></td>
+      <td class="">Meters</td>
+    </tr>
+  </table>
+  <!-- Yard to Meter -->
+  <table class="" id="convert3">
+    <tr class="form-group">
+      <td>From</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75" id="input_number_yard" onkeyup="myFunctionYard()"></td>
+      <td class="">Yards</td>
+    </tr>
+    <tr class="form-group">
+      <td>To</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75 " id="result_number_meter_2" onkeyup="myInfoMeter2()"></td>
+      <td class="">Meters</td>
+    </tr>
+  </table>
+  <!-- Miles to Kilometer -->
+  <table class="" id="convert4">
+    <tr class="form-group">
+      <td>From</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75" id="input_number_mile" onkeyup="myFunctionMile()"></td>
+      <td class="">Miles</td>
+    </tr>
+    <tr class="form-group">
+      <td>To</td>
+    </tr>
+    <tr class="form-group">
+      <td class=""><input type="number" name="" class="form-control h-75 " id="result_number_kilometer" onkeyup="myInfoKilometer()"></td>
+      <td class="">Kilometers</td>
+    </tr>
+  </table>
+  <span id="result"></span>
+</div>
+</div>
+</div>
+<!-- History -->
+<div class="container-fluid mt-5 history">
+<div class="row justify-content-center">
+<div class="col-10">
+  <div id="inch">
+    <h5>Inch</h5>
+    <p><b>Definition:</b> An inch (symbol: in) is a unit of length in the imperial and US customary systems of measurement. An inch was defined to be equivalent to exactly 25.4 millimeters in 1959. There are 12 inches in a foot and 36 inches in a yard.</p>
+    <p><b>History:</b> The term "inch" was derived from the Latin unit "uncia" which equated to "one-twelfth" of a Roman foot.</p>
+    <p>There have been a number of different standards for the inch in the past, with the current definition being based on the international yard. One of the earliest definitions of the inch was based on barleycorns, where an inch was equal to the length of three grains of dry, round barley placed end-to-end. Another version of the inch is also believed to have been derived from the width of a human thumb, where the length was obtained from averaging the width of three thumbs: a small, a medium, and a large one.</p>
+    <p><b>Current use:</b> The inch is mostly used in the United States, Canada, and the United Kingdom. It is also sometimes used in Japan (as well as other countries) in relation to electronic parts, like the size of display screens.</p>
+  </div>
+  <div id="milimeter">
+    <h5>Milimeter</h5>
+    <p><b>Definition:</b> A millimeter (symbol: mm) is a unit of length in the International System of Units (SI). It is defined in terms of the meter, as 1/1000 of a meter, or the distance traveled by light in 1/299 792 458 000 of a second.</p>
+    <p><b>History:</b> The milli- prefix is one of many metric prefixes. It indicates one thousandth of the base unit, in this case the meter. The definition of the meter has changed over time, the current definition being based on the distance traveled by the speed of light in a given amount of time. The relationship between the meter and the millimeter is constant however. Prior to this definition, the meter was based on the length of a prototype meter bar. In 2019, the meter has been re-defined based on the changes made to the definition of a second.</p>
+  </div>
+  <div id="feet">
+    <h5>Foot (or Feet)</h5>
+    <p><b>Definition:</b> A foot (symbol: ft) is a unit of length in the imperial and US customary systems of measurement. A foot was defined as exactly 0.3048 meters in 1959. One foot contains 12 inches, and one yard is comprised of three feet.</p>
+    <p><b>History:</b> Prior to standardization of units of measurement, and the definition of the foot currently in use, the measurement of the foot was used in many different systems including the Greek, Roman, English, Chinese, and French systems, varying in length between each. The various lengths were due to parts of the human body historically being used as a basis for units of length (such as the cubit, hand, span, digit, and many others, sometimes referred to as anthropic units). This resulted in the measurement of a foot varying between 250 mm and 335 mm in the past compared to the current definition of 304.8 mm. While the United States is one of the few, if not only, countries in which the foot is still widely used, many countries used their own version of the foot prior to metrication, as evidenced by a fairly large list of obsolete feet measurements.</p>
+    <p><b>Current use:</b> The foot is primarily used in the United States, Canada, and the United Kingdom for many everyday applications. In the US, feet and inches are commonly used to measure height, shorter distances, field length (sometimes in the form of yards), etc. Feet are also commonly used to measure altitude (aviation) as well as elevation (such as that of a mountain). The international foot corresponds to human feet with shoe size 13 (UK), 14 (US male), 15.5 (US female), or 46 (EU).</p>
+  </div>
+  <div id="yard">
+    <h5>Yard</h5>
+    <p><b>Definition:</b> A yard (symbol: yd) is a unit of length in both the imperial and US customary systems of measurement. Since 1959, a yard has been defined as exactly 0.9144 meters. It is also equal to 3 feet, or 36 inches.</p>
+    <p><b>History:</b> The origin of the yard as a unit is unclear. It is an English unit (predecessor of imperial units) and the term was derived from "gerd" in Old English, the earliest historical form of the English language. Some suggest that the yard could have been derived based on the girth of a person's waist.</p>
+    <p><b>Current use:</b> The yard is commonly used in field-length measurement for certain sports such as American and Canadian football, and association football (soccer). The yard is also used in cricket pitch dimensions, and sometimes in golf fairway measurements. In the United Kingdom (UK) as well as the United States, the yard is frequently used when referring to distance. In the UK, it is also a legal requirement that road signs indicating shorter distances are displayed in yards.</p>
+  </div>
+  <div id="meter">
+    <h5>Meter</h5>
+    <p><b>Definition:</b> A meter, or metre (symbol: m), is the base unit of length and distance in the International System of Units (SI). The meter is defined as the distance traveled by light in 1/299 792 458 of a second. This definition was slightly modified in 2019 to reflect changes in the definition of the second.</p>
+    <p><b>History:</b> Originally, in 1793, the meter was defined as one ten-millionth of the distance from the equator to the North Pole. This changed in 1889, when the International prototype metre was established as the length of a prototype meter bar (made of an alloy of 90% platinum and 10% iridium) measured at the melting point of ice. In 1960, the meter was again redefined, this time in terms of a certain number of wavelengths of a certain emission line of krypton-86. The current definition of the meter is effectively the same as the definition that was adopted in 1983, with slight modifications due to the change in definition of the second.</p>
+    <p><b>Current use:</b> Being the SI unit of length, the meter is used worldwide in many applications such as measuring distance, height, length, width, etc. The United States is one notable exception in that it largely uses US customary units such as yards, inches, feet, and miles instead of meters in everyday use.</p>
+  </div>
+  <div id="mile">
+    <h5>Miles</h5>
+    <p><b>Definition:</b> A mile (symbol: mi or m) is a unit of length in the imperial and US customary systems of measurement. It is currently defined as 5,280 feet, 1,760 yards, or exactly 1,609.344 meters.</p>
+    <p><b>History:</b> The mile is an English unit (predecessor of Imperial units and United States Customary Units) of length. The use of the abbreviation "m" for mile was common before the widespread adoption of the metric system; after the adoption of the metric system, "mi" became the preferred abbreviation in order to avoid confusion between miles and meters. The definition of a mile as 5,280 feet (or 8 furlongs), sometimes referred to as the statute mile, international mile, or land mile, which differs from the Roman mile of 5,000 feet, developed due to the importance of the furlong in England, back in 1593. There also exist a number of units based on, or closely related to, the Roman mile, including the nautical mile (1.852 km exactly), Italian mile (~1.852 km), and the Chinese mile (500m exactly).</p>
+    <p><b>Current use:</b> Although most countries have adopted the metric system and use kilometers, rather than miles, to express land distance, the mile is still prevalently used in countries such as the United States (US), United Kingdom (UK), Myanmar, and Liberia, as well as some other countries which are either US or UK territories, or have historical ties with either country.</p>
+  </div>
+  <div id="kilometer">
+    <h5>Kilometer</h5>
+    <p><b>Definition:</b> A kilometer (symbol: km) is a unit of length in the International System of Units (SI). One kilometer is equivalent to 0.6214 miles.</p>
+    <p><b>History:</b> The prefix kilo- is a metric prefix indicating one thousand. One kilometer is therefore one thousand meters. The origin of the kilometer is linked to that of the meter, and its current definition as the distance traveled by light in 1/299 792 458 second. This definition is subject to change, but the relationship between the meter and the kilometer will remain constant.</p>
+    <p><b>Current use:</b> It is currently the official unit of measurement for expressing distances between geographical places on land in most of the world. However, there still remain a number of countries that primarily use the mile instead of the kilometer including the United States and the United Kingdom (UK). Unlike the United States, the UK has adopted the metric system; while the metric system is widely used in government, commerce, and industry, remnants of the imperial system can still be seen in the UK's use of miles in its road systems.</p>
+  </div>
+  
+</div>
+</div>
+</div>
+<script type="text/javascript">
+</script>
+<!-- end history -->
+<!-- FAQs -->
+<hr class="border-dark" width="95%">
+<div class="container-fluid mt-1" data-spy="scroll" data-target="#navbar" data-offset="0" id="faq">
+<div class="row justify-content-center">
+<div class="col-10">
+  <h3 class="text-center" style="color: #0cc5e2;"><span><img src="./images/faq/faq.png" alt="" style="width: 30px; height: 40px;"></span>   FAQS</h3>
+  <div class="row">
+    <div class="col">
+      <div class="form-group" style="font-size: 15px;">
+        <p>1. How do I enter numbers in Scientific Notation ?</p>
+        <p><a href="#faq1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq1"><i class="fas fa-arrow-right"></i></a>
+        <div class="collapse" id="faq1">You may enter numbers in scientific notation, often called exponential notation, using the "e" format common to computer programs.
+          <div class="row">
+            <div class="col-8">
+              <div class="row justify-content-center">
+                <div class="row">
+                  <table class="table table-bordered table-responsive table-danger">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2">Example</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Scientifc Notation</td>
+                        <td>"e" Notation</td>
+                      </tr>
+                      <tr>
+                        <td>1.0 x 10<sup>-6</sup></td>
+                        <td>1.0e<sup>-6</sup></td>
+                      </tr>
+                      <tr>
+                        <td>1.234 x 10<sub>15</sub></td>
+                        <td>1.234e<sup>15</sup></td>
+                      </tr>
+                      <tr>
+                        <td>9.518 x 10<sup>+23</sup></td>
+                        <td>9.518e<sup>23</sup></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>  Currently, the conversions do not output the result in scientific notation. In the future, you will be able to choose how you would like the result dipsplayed, but I do not know when that project will be finished.</p>
+        </p></div>
+        
+        <p>2.  What is a knot? What is a nautical mile ? </p>
+        <p><a href="#faq2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq2"><i class="fas fa-arrow-right"></i></a>
+        <div class="collapse" id="faq2">Knots and Nautical miles are good old navy terms. The nautical mile was based on the circumference of the earth at the equator. Since the earth is 360 degrees of longitude around, and degrees are broken into 60 so-called "minutes", that means there are 360 * 60 = 21,600 "minutes" of longitude around the earth. This was taken as the basis for the nautical mile; thus, by definition, 1 minute of longitude at the equator is equal to 1 nautical mile. So the earth is ideally, by definition, 21,600 nautical miles (and 21,600 "minutes" of longitude) in circumference at the equator. If anyone ever asks you how far is it around the earth, you can quickly do the math in your head (360 degrees * 60 minutes per degree) and answer "about 21,600 nautical miles!"
+          <p>In fact, even modern navigators use the "minute of latitude" on charts to measure distance; this is what you see them doing when they use their compass spreaders while they are hovering over their nautical charts (maps). [For geometrical reasons, we use the minute of latitude on charts to correspond to a nautical mile rather than the minute of longitude. Minutes of longitude shrink as they move away from the equator and towards the poles; minutes of latitude do not shrink. Take a look at a globe with longitude and latitude lines marked on it to understand why.]</p>
+          <p>Using the definition of a nautical mile for distance at sea, the challenge was to measure speed -- i.e. what is the ship's speed in nautical miles per hour? (By the way, the nautical mile is about 1.15 larger than the "statute" mile used by land lubbers.) Since [speed] = [distance] divided by [time], if we measure a small distance (or length) in a small time we can do the math and figure our speed.</p>
+          <p>The device that sailors used to make their speed measurement was called the "chip log." Chip as in chip of wood, and log as in to record in a log. The chip was a wedge of wood about 18" in size; it was tied to one end of a rope on a large spool. The rope had knots tied into it about every 47'3" (more about how that was calibrated below).
+          The wooden chip was thrown overboard at the ship's stern (back end). Because of its wedge shape, it would "grab" the water and start pulling out rope as the ship moved forward at some yet unknown speed. One man would hold the spool of rope as it played out; another man would start a sandglass filled with 30 seconds of sand; and a third man would count the knots as they passed over the stern board. When the 30 seconds of sand expired, the time keeper would call out and the counting of knots would stop.</p>
+          <p>The faster the ship was sailing, more knots and a longer length of rope were played out. The number of knots in the rope that were counted in 30 seconds, then, was equal to the speed of the ship in nautical miles per hour. A "knot", therefore, is not a nautical mile, it is a nautical mile per hour. Thus 1 knot was equivalent to 1 nautical mile per hour; 5 knots were equivalent to 5 nautical miles per hour; etc. The similar sound of "knot" and "naut" is entirely coincidental.</p>
+          <p>Finally, what about the actual values of 47'3" between knots on the rope and the 30 seconds that were used with the chip log? The length was based on converting [1 nautical mile per hour] to [feet per second(fps)], and then multiplying [fps] by 30 seconds (which was a practical time to spend counting knots with a sandglass). The result was the calibrated length in feet at which to tie the knots for a 30-second run of the chip log.</p>
+          <p>... Now that we have much more precise technology to measure things, and because we need to establish international standards and conversion factors, and because the earth is not uniformly flat or round anywhere, and because even the precise definition of the second has changed, the official value for how many international feet in an international nautical mile has changed. Likewise, the measuring time of about "30 seconds" in the sandglass is now calibrated at 28 seconds. Time itself didn't change by 6.7%! But the cumulative effects of new international standard definitions for time, feet, statute miles, and nautical miles and more accurate measurements of the actual size of the earth -- and the fact that we don't use sand to measure time anymore -- have changed the modern calibration of the chip log.</p>
+          For a photograph and brief explanation of the chip log, see [..link temporarily down..]
+          <p>"All hands to loose topgallant sails!"</p>
+          <p>By Brian Hagerty, posted with permission.</p></p></div>
+          <p>3.  What about rainfall? How do I convert between inches of rain, and millimeters of rain ?</p>
+          <p><a href="#faq3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq3"><i class="fas fa-arrow-right"></i></a>
+          <div class="collapse" id="faq3">You can safely use the <a href="length.html">Length Conversion Page</a> to convert to and from inches of rain and millimeters of rain.
+          <p>It is true that rainfall fall is measured differently, but it all works out to just a plain old height measurement. But I know you would never be happy with the simple explanation, so then, let us work this problem out using our good friend, math.</p>
+          <p>Rainfall is measured by Volume over an Area. In algebra terms that is Volume/Area.</p>
+          <p>Volume = Length * Width * Height<br>
+          Area = Length * Width</p>
+          <P>Now we know rainfall is measured by Volume/Area, we can substitute.</P>
+          <p>Volume/Area<br>
+            (Length * Width) * Height / (Length * Width)<br>
+          And since the common terms cancel each other out, we are left with just Height.</p>
+          <p>Maybe I overly complicated the matter, so in the simplest terms, just consider inches of rain as inches, and millimeters of rain as millimeters, and convert them as usual.</p></p></div>
+          <p>4.  What is the difference between the long ton, short ton, and metric ton ?</p>
+          <p><a href="#faq4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq4"><i class="fas fa-arrow-right"></i></a>
+          <div class="collapse" id="faq4">The British ton is the long ton, which is 2240 pounds, and the U.S. ton is the short ton which is 2000 pounds.
+            <p>Both tons are actually defined in the same way. 1 ton is equal to 20 hundredweight. It is just the definition of the hundredweight that differs between countries. In the U.S. there are 100 pounds in the hundredweight, and in Britain there are 112 pounds in the hundredweight. This causes the actual weight of the ton to differ between countries.</p>
+            <p>To distinguish between the two tons, the smaller U.S. ton is called short, while the larger British ton is called long.</p>
+            <p>There is also an third type of ton called the metric ton, equal to 1000 kilograms, or approximately 2204 pounds. The metric ton is officially called tonne. The SI standard calls it tonne, but the U.S. Government recommends calling it metric ton</p></p>
+          </div>
+          <p>5.  At what temperature are Celsius and Fahrenheit the same ?</p>
+          <p><a href="#faq5" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="faq5"><i class="fas fa-arrow-right"></i></a>
+          <div class="collapse" id="faq5">The formulas for converting between degree Celsius and degree Fahrenheit are:
+            <p>°F = (°C * 9/5) + 32<br>
+            °C = (°F - 32) * 5/9</p>
+            <p>To find the temperature when both are equal, we use an old algebra trick and just set ºF = ºC and solve one of the equations.</p>
+            <p>°C = (°C * 9/5) + 32<br>
+              °C - (°C * 9/5) = 32<br>
+              -4/5 * °C = 32<br>
+              °C = -32 * 5/4<br>
+            °C = -40</p>
+            <p>°F = (°F * 9/5) + 32<br>
+              °F - (°F * 9/5) = 32<br>
+              -4/5 * °F = 32<br>
+              °F = -32 * 5/4<br>
+            °F = -40</p>
+            <p>So the temperature when both the Celsius and Fahrenheit scales are the same is -40 degrees.</p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label> Comment</label>
+          <textarea class="form-control" id="comment" style="width: 100%; height: 100%; border-radius: 5px;"></textarea>
+          <button class="btn btn-success mt-2" id="send" onclick="mySend()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function mySend(){
+Swal.fire({
+position: 'center',
+icon: 'success',
+title: 'Thanks You',
+showConfirmButton: false,
+timer: 1500,
+});
+document.getElementById('comment').value = "";
+}
+</script>
+<!-- End FAQs -->
+<!-- Some Acticle -->
+<hr class="border-dark" width="95%">
+ <div class="container-fluid mt-3" id="article">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h5 class="text-center" style="color:#0cc5e2; "><i class="far fa-newspaper"></i>   Some Articles</h5>
+        <div class="row">
+          <div class="col">
+            <div class="form-group" style="font-size: 15px;">
+              <ul>
+                <li><p><a href="#article1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="article1">The SI System</a> An article describing what the SI system of units is.</p>  </li>
+                <div class="collapse" id="article1">
+                  <h5>SI</h5>
+                  <p>The <b>International System of Units</b> (abbreviated <b>SI</b> from the French phrase, Système International d'Unités) is the most widely used system of units. It is the most common system for everyday commerce in the world, and is almost universally used in the realm of science.</p>
+                  <p>In 1960, the SI was developed from a subset of the existing Metre-Kilogram-Second systems of units (MKS), rather than the older Centimetre-Gram-Second system (CGS). Various new units were created at that time. The SI is not static, it is a living set of standards where units are created and definitions are modified with international agreement. The SI authority describes SI as the <b>modern metric system</b> where modern means post-1960. It is common for people to describe non-SI units as 'metric', although there is no authority that maintains a current definition of metric system other than SI.</p>
+                  <p>With a few exceptions (such as draught beer sales in the United Kingdom) the system is legally being used in every country in the world and many countries do not maintain definitions of other units. In the United States the use of SI is increasing but is still limited. In the United Kingdom, conversion to metric units is official policy but not yet complete. Those countries that still give recognition to non-SI units (e.g. the US and UK) have defined many of the modern units in terms of SI units.</p>
+                  <p><h5>History</h5></p>
+                  <p>The metric system was officially adopted in France after the French Revolution. During the history of the metric system a number of variations have evolved and their use spread around the world replacing many traditional measurement systems.</p>
+                  <p>By the end of World War II a number of different systems of measurement were still in use throughout the world. Some of these systems were metric system variations whilst others were based on the Imperial and American systems. It was recognised that additional steps were needed to promote a worldwide measurement system. As a result the 9th General Conference on Weights and Measures (CGPM), in 1948, asked the International Committee for Weights and Measures (CIPM) to conduct an international study of the measurement needs of the scientific, technical, and educational communities.</p>
+                  <p>Based on the findings of this study, the 10th CGPM in 1954 decided that an international system should be derived from six base units to provide for the measurement of temperature and optical radiation in addition to mechanical and electromagnetic quantities. The six base units recommended were the metre, kilogram, second, ampere, Kelvin degree (later renamed the kelvin), and the candela. In 1960, the 11th CGPM named the system the <i>International System of Units</i>, abbreviated SI from the French name: <i>Le Système International d'Unités</i>. The seventh base unit, the mole, was added in 1970 by the 14th CGPM.</p>
+                  <p>The International System is now either obligatory or permissible throughout the world. It is administered by the standards organisation: the Bureau International des Poids et Mesures (International Bureau of Weights and Measures).</p>
+                  <p><h5>Cultural issues</h5></p>
+                  <p>The swift worldwide adoption of the metric system as a tool of economy and everyday commerce was based mainly on the lack of customary systems in many countries to adequately describe some concepts, or as a result of an attempt to standardize the many regional variations in the customary system. International factors also affected the adoption of the metric system, as many countries increased their trade. Scientifically, it provides ease when dealing with very large and small quantities because it lines up so well with our decimal numeral system.</p>
+                  <p>Cultural differences can be represented in the local everyday uses of metric units. For example, bread is sold in one-half, one or two kilogram sizes in many countries, but you buy them by multiples of one hundred grams in the former USSR. In some countries, the informal <i>cup</i> measurement has become 250 mL, and prices for items are sometimes given per 100 g rather than per kilogram. A profound cultural difference between physicists and engineers, especially radio engineers, existed prior to the adoption of the metre-kilogram-second (MKS) system and hence its descendent, SI. Engineers work with volts, amperes, ohms, farads, and coulombs, which are of great practical utility, while the centimetre-gram-second (CGS) units, which are fine for theoretical physics can be inconvenient for electrical engineering usage and are largely unfamiliar to householders using appliances rated in volts and watts.</p>
+                  <p>Non-scientific people should not be put off by the fine-tuning that has happened to the metric base units over the past 200 years, as experts have tried frequently to refine the metric system to fit the best scientific research (e.g. CGS to MKS to SI system changes or the invention of the Kelvin scale). These changes do not affect the everyday use of metric units. The presence of these adjustments has been one reason advocates of the U.S. customary units had used against metrication; these customary units, however, are nowadays defined in terms of SI units, thus any difference in the definition of the SI units results in a difference of the definition of the customary units.</p>
+                  <p><h5>SI writing style</h5></p>
+                  <ul>
+                    <li>Symbols are written in lower case, except for symbols derived from the name of a person. For example, the unit of pressure is named after Blaise Pascal, so its symbol is written "Pa" whereas the unit itself is written "pascal". The one exception is the litre, whose original abbreviation "l" is dangerously similar to "1". The NIST recommends that "L" be used instead, a usage which is common in the U.S., Canada and Australia, and has been accepted as an alternative by the CGPM. The cursive "l" is occasionally seen, especially in Japan, but this is not currently recommended by any standards body. For more information, see Litre.</li>
+                    <li>Symbols are written in singular form: i.e. "25 kg", not "25 kgs". Pluralization would be language dependent; "s" plurals (as in French and English) are particularly undesirable since "s" is the symbol of the second.
+                    Symbols do not have an appended period (.).</li>
+                    <li>It is preferable to write symbols in upright Roman type (m for metres, L for litres), so as to differentiate from the italic type used for mathematical variables (<i>m</i> for mass, <i>l</i> for length).</li>
+                    <li>A space should separate the number and the symbol, e.g. "2.21 kg", "7.3×10<sup>2</sup> m<sup>2</sup>", "22 °C". Exceptions are the symbols for plane angular degrees, minutes and seconds (°, ' and "), which are placed immediately after the number with no intervening space.</li>
+                    <li>Spaces should be used to group decimal digits in threes, e.g. 1 000 000 or 342 142 (in contrast to the commas or dots used in other systems, e.g. 1,000,000 or 1.000.000).</li>
+                    <li>The 10th resolution of CGPM in 2003 declared that "the symbol for the decimal marker shall be either the point on the line or the comma on the line". In practice, the full stop is used in English, and the comma in most other European languages.</li>
+                    <li>Symbols for derived units formed from multiple units by multiplication are joined with a space or centre dot (·), e.g. N m or N·m.</li>
+                    <li>Symbols formed by division of two units are joined with a solidus (/), or given as a negative exponent. For example, the "metre per second" can be written "m/s", "m s<sup>-1</sup>", "m·s<sup>-1</sup>." or <img src="./images/some_article/ms.png" alt="" style="width: 30px; height: 30px;">. A solidus should not be used if the result is ambiguous, i.e. "kg·m<sup>-1</sup>·s<sup>-2</sup>" is preferable to "kg/m/s<sup>2</sup>".</li>
+                  </ul>
+                  <p><b>Spelling variations</b></p>
+                  <ul>
+                    <li>Several nations, notably the United States, typically use the spellings 'meter' and 'liter' instead of 'metre' and 'litre' in keeping with standard American English spelling. In addition, the official US spelling for the SI prefix 'deca' is 'deka'.</li>
+                    <li>The unit 'gram' is also sometimes spelled 'gramme' in English-speaking countries other than the United States, though that is an older spelling and use is declining.</li>
+                  </ul>
+                  <p><h5>Units</h5></p>
+                  <p>SI consists of seven base units and several derived units, together with a set of prefixes.</p>
+                  <p><b>Base units</b></p>
+                  <p>The following are the fundamental units from which all others are derived, they are dimensionally independent. The definitions stated below are widely accepted.</p>
+                  <p><h5 class="text-center">SI Base units</h5></p>
+                  <table class="table table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Definition</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Kilogram</td>
+                        <td><b>Kg</b></td>
+                        <td>Mass</td>
+                        <td>The unit of mass is equal to the mass of the international prototype kilogram (a platinum-iridium cylinder) kept at the Bureau International des Poids et Mesures (BIPM), Sèvres, Paris (1st CGPM (1889), CR 34-38). Note that the kilogram is the only base <i>unit</i> with a prefix; the gram is defined as a derived <i>unit</i>, equal to 1/1000 of a kilogram; prefixes such as mega are applied to the gram, not the kg; e.g. Gg, not Mkg. It is also the only unit still defined by a physical prototype instead of a measurable natural phenomenon (see the kilogram article for an alternate definition).</td>
+                      </tr>
+                      <tr>
+                        <td>Second</td>
+                        <td><b>s</b></td>
+                        <td>Time</td>
+                        <td>The unit of time is the duration of exactly 9 192 631 770 periods of the radiation corresponding to the transition between two hyperfine levels of the ground state of the caesium-133 atom at a temperature of 0 K (13th CGPM (1967-1968) Resolution 1, CR 103).</td>
+                      </tr>
+                      <tr>
+                        <td>Metre</td>
+                        <td><b>m</b></td>
+                        <td>Length</td>
+                        <td>The unit of length is equal to the length of the path traveled by light in a vacuum during the time interval of 1/299 792 458 of a second (17th CGPM (1983) Resolution 1, CR 97).</td>
+                      </tr>
+                      <tr>
+                        <td>Ampere</td>
+                        <td><b>A</b></td>
+                        <td>Electrical current</td>
+                        <td>The unit of electrical current is the constant current which, if maintained in two straight parallel conductors, of infinite length and negligible cross-section, placed 1 metre apart in a vacuum, would produce a force between these conductors equal to 2×10<sup>-7</sup> newtons per metre of length (9th CGPM (1948) Resolution 7, CR 70).</td>
+                      </tr>
+                      <tr>
+                        <td>Kelvin</td>
+                        <td><b>K</b></td>
+                        <td>Thermodynamic temperature</td>
+                        <td>The unit of thermodynamic temperature (or absolute temperature) is the fraction 1/273.16 (exactly) of the thermodynamic temperature at the triple point of water (13th CGPM (1967) Resolution 4, CR 104).</td>
+                      </tr>
+                      <tr>
+                        <td>Mole</td>
+                        <td><b>mol</b></td>
+                        <td>Amount of substance</td>
+                        <td>The unit of amount of substance is the amount of substance which contains as many elementary entities as there are atoms in 0.012 kilograms of pure carbon-12 (14th CGPM (1971) Resolution 3, CR 78). (Elementary entities may be atoms, molecules, ions, electrons, or particles.) It is approximately equal to 6.02214199×10<sup>23</sup> units (Avogadro's number).</td>
+                      </tr>
+                      <tr>
+                        <td>Candela</td>
+                        <td><b>cd</b></td>
+                        <td>Luminous intensity</td>
+                        <td>The unit of luminous intensity is the luminous intensity, in a given direction, of a source that emits monochromatic radiation of frequency 540×1012 hertz and that has a radiant intensity in that direction of 1/683 watt per steradian (16th CGPM (1979) Resolution 3, CR 100).</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p><h5>Dimensionless derived units</h5></p>
+                  <p>The following SI units are actually dimensionless ratios, formed by dividing two identical SI units. They are therefore considered by the BIPM to be derived. Formally, their SI unit is simply the number 1, but they are given these special names, for use whenever the lack of a unit might be confusing.</p>
+                  <p><h5 class="text-center">SI dimensionless units</h5></p>
+                  <table class="table table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Definition</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Radian</td>
+                        <td><b>rad</b></td>
+                        <td>Angle</td>
+                        <td>The unit of angle is the angle subtended at the centre of a circle by an arc of the circumference equal in length to the radius of the circle. There are 2π radians in a circle.</td>
+                      </tr>
+                      <tr>
+                        <td>Steradian</td>
+                        <td><b>sr</b></td>
+                        <td>Solid angle</td>
+                        <td>The unit of solid angle is the solid angle subtended at the centre of a sphere of radius <i>r</i> by a portion of the surface of the sphere having an area <i>r<sup>2</sup></i>. There are 4π steradians on a sphere.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p><b>Derived units with special names</b></p>
+                  <p>Base units can be put together to derive units of measurement for other quantities. Some have been given names.</p>
+                  <p><h5 class="text-center">SI derived units with special names</h5></p>
+                  <table class="table table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col" class="w-50">Quantity</th>
+                        <th scope="col" class="w-50">Expressed in base units</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Hertz</td>
+                        <td><b>Hz</b></td>
+                        <td>Frequency</td>
+                        <td>s<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Newton</td>
+                        <td><b>N</b></td>
+                        <td>Force</td>
+                        <td>m·kg·s<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Joule</td>
+                        <td><b>J</b></td>
+                        <td>Energy</td>
+                        <td>N.m = m<sup>2</sup>·kg·s<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Watt</td>
+                        <td><b>W</b></td>
+                        <td>Power</td>
+                        <td>J/s = m<sup>2</sup>·kg·s<sup>-3</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Pascal</td>
+                        <td><b>Pa</b></td>
+                        <td>Pressure, Stress</td>
+                        <td>N/m<sup>2</sup>= m<sup>-1</sup>·kg·s<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Lumen</td>
+                        <td><b>lm</b></td>
+                        <td>Luminous flux</td>
+                        <td>cd·sr = m<sup>2</sup>·m<sup>-2</sup>·cd = cd</td>
+                      </tr>
+                      <tr>
+                        <td>Lux</td>
+                        <td><b>lx</b></td>
+                        <td>Illuminance</td>
+                        <td>lm/m<sup>2</sup> = m<sup>2</sup>·m<sup>-4</sup>·cd = m<sup>-2</sup>·cd</td>
+                      </tr>
+                      <tr>
+                        <td>Coulomb</td>
+                        <td><b>C</b></td>
+                        <td>Electric charge or flux</td>
+                        <td>s·A</td>
+                      </tr>
+                      <tr>
+                        <td>Volt</td>
+                        <td><b>V</b></td>
+                        <td>Electrical potential difference</td>
+                        <td>W/A = J/C = m<sup>2</sup>·kg·s<sup>-3</sup>·A<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Ohm</td>
+                        <td><b>Ω</b></td>
+                        <td>Electric resistance</td>
+                        <td>V/A = m<sup>2</sup>·kg·s<sup>-3</sup>·A<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Farad</td>
+                        <td><b>F</b></td>
+                        <td>Electric capacitance</td>
+                        <td>C/V = m<sup>-2</sup>·kg<sup>-1</sup>·s<sup>4</sup>·A<sup>2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Weber</td>
+                        <td><b>Wb</b></td>
+                        <td>Magnetic flux</td>
+                        <td>m<sup>2</sup>·kg·s<sup>-2</sup>·A<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Tesla</td>
+                        <td><b>T</b></td>
+                        <td>Magnetic flux density</td>
+                        <td>Wb/m<sup>2</sup> = kg·s<sup>-2</sup>·A<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Henry</td>
+                        <td><b>H</b></td>
+                        <td>Inductance</td>
+                        <td>Wb/A = m<sup>2</sup>·kg·s<sup>-2</sup>·A<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Siemens</td>
+                        <td><b>S</b></td>
+                        <td>Electric conductance</td>
+                        <td>Ω<sup>-1</sup> = m<sup>-2</sup>·kg<sup>-1</sup>.s<sup>3</sup>·A<sup>2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Becquerel</td>
+                        <td><b>Bq</b></td>
+                        <td>Radioactivity (decays per unit time)</td>
+                        <td>s<sup>-1</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Gray</td>
+                        <td><b>Gy</b></td>
+                        <td>Absorbed dose (of ionising radiation)</td>
+                        <td>J/kg = m<sup>2</sup>·s<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Sievert</td>
+                        <td><b>SV</b></td>
+                        <td>Equivalent dose (of ionising radiation)</td>
+                        <td>J/kg = m<sup>2</sup>·s<sup>-2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Katal</td>
+                        <td><b>kat</b></td>
+                        <td>Catalytic activity</td>
+                        <td>mol/s = s<sup>-1</sup>·mol</td>
+                      </tr>
+                      <tr>
+                        <td>Degree Celsius</td>
+                        <td><b>°C</b></td>
+                        <td>Thermodynamic temperature</td>
+                        <td>K(0°C = 273.15°K, 0°K = -273.15°C)</td>
+                      </tr>
+                      <tr>
+                        <td>Molarity</td>
+                        <td><b>M</b></td>
+                        <td>Concentration</td>
+                        <td>mol/L (mols of substance/liters of solution)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p><b>Non-SI units accepted for use with SI</b></p>
+                  <p>The following units are not SI units but are "accepted for use with the International System."</p>
+                  <p><h5 class="text-center">Non-SI units accepted for use with SI</h5></p>
+                  <table class="table table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col"class="w-25">Name</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col" class="w-75">Equivalent SI unit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Minute</td>
+                        <td><b>min</b></td>
+                        <td>Time</td>
+                        <td>1 min = 60 s</td>
+                      </tr>
+                      <tr>
+                        <td>Hour</td>
+                        <td><b>h</b></td>
+                        <td>Time</td>
+                        <td>1 h = 60 min = 3600 s</td>
+                      </tr>
+                      <tr>
+                        <td>Day</td>
+                        <td><b>d</b></td>
+                        <td>Time</td>
+                        <td>1 d = 24 h = 1440 min = 86400 s</td>
+                      </tr>
+                      <tr>
+                        <td>Degree of arc</td>
+                        <td><b>°</b></td>
+                        <td>Angle</td>
+                        <td>1 ° = (π/180) rad</td>
+                      </tr>
+                      <tr>
+                        <td>Minute of arc</td>
+                        <td><b>'</b></td>
+                        <td>Angle</td>
+                        <td>1 ' = (1/60) ° = (π/10800) rad</td>
+                      </tr>
+                      <tr>
+                        <td>Second of arc</td>
+                        <td><b>"</b></td>
+                        <td>Angel</td>
+                        <td>1 " = (1/60) ' = (1/3600) ° = (π/648000) rad</td>
+                      </tr>
+                      <tr>
+                        <td>Litre</td>
+                        <td><b>l or L</b></td>
+                        <td>Volume</td>
+                        <td>0.001 m<sup>3</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Tonne</td>
+                        <td><b>t</b></td>
+                        <td>Mass</td>
+                        <td>1 t = 10<sup>3</sup> kg</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4"><h5 class="text-center">Non-SI units not formally adopted by the CGPM</h5></td>
+                      </tr>
+                      <tr>
+                        <td>Neper, Field quantitye</td>
+                        <td><b>Np</b></td>
+                        <td>Ratio (dimensionless) </td>
+                        <td>L<sub>F</sub> = ln (F/F<sub>0</sub>) Np</td>
+                      </tr>
+                      <tr>
+                        <td>Neper, Power quantity</td>
+                        <td><b>Np</b></td>
+                        <td>Ratio (dimensionless) </td>
+                        <td>L<sub>P</sub> = 1/2.ln (P/P<sub>0</sub>) Np</td>
+                      </tr>
+                      <tr>
+                        <td>Bel, Field quantity</td>
+                        <td><b>B</b></td>
+                        <td>Ratio (dimensionless) </td>
+                        <td>L<sub>F</sub> = 2.log<sub>10</sub> (F/F<sub>0</sub>) B</td>
+                      </tr>
+                      <tr>
+                        <td>Bel, Power quantity</td>
+                        <td><b>B</b></td>
+                        <td>Ratio (dimensionless) </td>
+                        <td>L<sub>P</sub> = log<sub>10</sub> (P/P<sub>0</sub>) B</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4"><h5 class="text-center">Non-SI units with values obtained only by experiment</h5></td>
+                      </tr>
+                      <tr>
+                        <td>Electronvolt</td>
+                        <td><b>eV</b></td>
+                        <td>Energy</td>
+                        <td>1 eV = 1.60217733 (49) × 10<sup>-19</sup> J</td>
+                      </tr>
+                      <tr>
+                        <td>Atomic mass unit</td>
+                        <td><b>u</b></td>
+                        <td>Mass</td>
+                        <td>1 u = 1.6605402 (10) × 10<sup>-27</sup> kg</td>
+                      </tr>
+                      <tr>
+                        <td>Astronomical unit</td>
+                        <td><b>AU</b></td>
+                        <td>Length</td>
+                        <td>1 AU = 1.49597870691 (30) × 10<sup>11</sup> m</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4"><h5 class="text-center">Non-SI units whose use is not encouraged</h5></td>
+                      </tr>
+                      <tr>
+                        <td>Nautical mile</td>
+                        <td><b></b></td>
+                        <td>Length</td>
+                        <td>1 nautical mile = 1852 m</td>
+                      </tr>
+                      <tr>
+                        <td>Knot</td>
+                        <td><b></b></td>
+                        <td>Speed</td>
+                        <td>1 knot = 1 nautical mile per hour = (1852/3600) m/s</td>
+                      </tr>
+                      <tr>
+                        <td>Are</td>
+                        <td><b>a</b></td>
+                        <td>Area</td>
+                        <td>1 a = 1 dam<sup>2</sup> = 100 m<sup>2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Hectare</td>
+                        <td><b>ha</b></td>
+                        <td>Area</td>
+                        <td>1 ha = 100 a = 10000 m<sup>2</sup></td>
+                      </tr>
+                      <tr>
+                        <td>Bar</td>
+                        <td><b>bar</b></td>
+                        <td>Pressure</td>
+                        <td>1 bar = 10<sup>5</sup> Pa</td>
+                      </tr>
+                      <tr>
+                        <td>A*ngström, angstrom</td>
+                        <td><b>A*</b></td>
+                        <td>Length</td>
+                        <td>1 A* = 0.1 nm = 10<sup>-10</sup> m</td>
+                      </tr>
+                      <tr>
+                        <td>Barn</td>
+                        <td><b>b</b></td>
+                        <td>Area</td>
+                        <td>1 b = 10<sup>-28</sup> m<sup>2</sup></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p><b>SI prefixes</b></p>
+                  <p>SI defines a number of SI prefixes to be used with the units: these combine with any unit name to give subdivisions and multiples. For example, the prefix <i>kilo</i> denotes a multiple of a thousand, so the <i>kilo</i>metre is 1000 metres, the <i>kilo</i>gram 1000 grams, and so on. The prefixes are never combined; a millionth of a kilogram is a <i>milligram</i>, and not a 'microkilogram'.</p>
+                  <p>The following SI prefixes can be used to prefix any of the above units to produce a multiple or submultiple of the original unit. This includes the degree Celsius (e.g. "1.2 m°C"); however, to avoid confusion, prefixes are <i>not</i> used with the time-related unit symbols min (minute), h (hour), d (day). They are not recommended for use with the angle-related symbols ° (degree), ' (minute of arc), and " (second of arc), but for astronomical usage, they are sometimes used with seconds of arc.</p>
+                  <p><h5 class="text-center">SI prefixes</h5></p>
+                  <table class="table table-bordered table-responsive">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="w-25">10<sup>n</sup></th>
+                        <th scope="col">Prefix</th>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Short scale</th>
+                        <th scope="col" class="w-25">Long scale</th>
+                        <th scope="col" class="w-50">Decimal equivalent</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>10<sup>24</sup></td>
+                        <td>yotta</td>
+                        <td><b>Y</b></td>
+                        <td>Septillion</td>
+                        <td>Quadrillion</td>
+                        <td>1 000 000 000 000 000 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>21</sup></td>
+                        <td>zetta</td>
+                        <td><b>Z</b></td>
+                        <td>Sextillion</td>
+                        <td>Trilliard (thousand trillion)</td>
+                        <td>1 000 000 000 000 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>18</sup></td>
+                        <td>exa</td>
+                        <td><b>E</b></td>
+                        <td>Quintillion</td>
+                        <td>Trillion</td>
+                        <td>1 000 000 000 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>15</sup></td>
+                        <td>peta</td>
+                        <td><b>P</b></td>
+                        <td>Quadrillion</td>
+                        <td>Billiard (thousand billion)</td>
+                        <td>1 000 000 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>12</sup></td>
+                        <td>tera</td>
+                        <td><b>T</b></td>
+                        <td>Trillion</td>
+                        <td>Billion</td>
+                        <td>1 000 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>9</sup></td>
+                        <td>giga</td>
+                        <td><b>G</b></td>
+                        <td>Billion</td>
+                        <td>Milliard (thousand million)</td>
+                        <td>1 000 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>6</sup></td>
+                        <td>mega</td>
+                        <td><b>M</b></td>
+                        <td colspan="2" class="text-center">Million</td>
+                        <td>1 000 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>3</sup></td>
+                        <td>kilo</td>
+                        <td><b>k</b></td>
+                        <td colspan="2" class="text-center">Thousand</td>
+                        <td>1 000</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>2</sup></td>
+                        <td>hecto</td>
+                        <td><b>h</b></td>
+                        <td colspan="2" class="text-center">Hundred</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>1</sup></td>
+                        <td>deca, deka</td>
+                        <td><b>h</b></td>
+                        <td colspan="2" class="text-center">Ten</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>0</sup></td>
+                        <td>none</td>
+                        <td>none</td>
+                        <td colspan="2" class="text-center">One</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-1</sup></td>
+                        <td>deci</td>
+                        <td><b>d</b></td>
+                        <td colspan="2" class="text-center">Tenth</td>
+                        <td>0.1</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-2</sup></td>
+                        <td>centi</td>
+                        <td><b>c</b></td>
+                        <td colspan="2" class="text-center">Hundredth</td>
+                        <td>0.01</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-3</sup></td>
+                        <td>mili</td>
+                        <td><b>m</b></td>
+                        <td colspan="2" class="text-center">Thousandth</td>
+                        <td>0.001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-6</sup></td>
+                        <td>micro</td>
+                        <td><b>µ</b></td>
+                        <td colspan="2" class="text-center">Millionth</td>
+                        <td>0.000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-9</sup></td>
+                        <td>nano</td>
+                        <td><b>n</b></td>
+                        <td>Billionth</td>
+                        <td>Milliardth</td>
+                        <td>0.000 000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-12</sup></td>
+                        <td>pico</td>
+                        <td><b>p</b></td>
+                        <td>Trillionth</td>
+                        <td>Billionth</td>
+                        <td>0.000 000 000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-15</sup></td>
+                        <td>femto</td>
+                        <td><b>f</b></td>
+                        <td>Quadrillionrth</td>
+                        <td>Billiardth</td>
+                        <td>0.000 000 000 000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-18</sup></td>
+                        <td>atto</td>
+                        <td><b>a</b></td>
+                        <td>Quintillionth</td>
+                        <td>Trillionth</td>
+                        <td>0.000 000 000 000 000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-21</sup></td>
+                        <td>zepto</td>
+                        <td><b>z</b></td>
+                        <td>Sextillionth</td>
+                        <td>Trilliardth</td>
+                        <td>0.000 000 000 000 000 000 001</td>
+                      </tr>
+                      <tr>
+                        <td>10<sup>-24</sup></td>
+                        <td>yocto</td>
+                        <td><b>y</b></td>
+                        <td>Septillionth</td>
+                        <td>Quadrillionth</td>
+                        <td>0.000 000 000 000 000 000 000 001</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p><b>Obsolete metric prefixes</b></p>
+                  <p>The following metric prefixes are no longer in use: myria-, myrio-, and any double prefixes such as those formerly used in micromicrofarads, hectokilometres, millimicrons.</p>
+                  <p>This article is available under the terms of the GNU Free Documentation License. Original article can be found <a href="https://en.wikipedia.org/wiki/International_System_of_Units">here</a>.</p>
+                </div>
+                <li><p><a href="#article2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="article2">Metric System</a> An article describing the differences between the various metric systems.</p></li>
+                <div class="collapse" id="article2">
+                  <h5>Metric system</h5>
+                  <p>A <b>metric system</b> is a system of units for measurement developed in late 18th century France with decimal multipliers. In the early metric system there were two fundamental or base units, the metre and the kilogram, for length and mass. Other units were derived from these two fundamental units.</p>
+                  <p>Multiples and submultiples of metric units are related by powers of ten; the names for these are formed with prefixes. This relationship is compatible with the decimal system of numbers and it contributes greatly to the convenience of metric units.</p>
+                  <p>As the result of scientific progress, refinements, and different choices of base units, there have been a number attempts at creating metric systems. The modern (<i>modern</i> meaning post-1960) metric system is now widely used throughout the world and is called the International System of Units (SI).</p>
+                  <p><h5>History</h5></p>
+                  <p>Scientists, chiefly in France, had been advocating and discussing a decimal system of measurement based on natural units since at least 1640. It had some support by French monarchs. The first official adoption of such a system occured in France in 1791 after the French Revolution of 1789. The creators of this <b>metric system</b> tried to choose units that were logical and practical. The revolution gave an opportunity for drastic change with an official ideology of "pure reason". It was proposed as a considerable improvement over the inconsistent collection of customary units that existed before. The value of these units often depended on the region.</p>
+                  <p>The adoption of the <b>metric syste</b> in France was slow, but its desirability as an international system was recognised by geodesists and others. Since then a number of variations on the system evolved. Their use spread throughout the world, first to the non-English-speaking countries, and more recently to the English speaking countries.</p>
+                  <p>On the 20th of May 1875 an international treaty known as the <i>Convention du Mètre</i> (Metre Convention) was signed by 17 states. This treaty established the following organisations to conduct international activities relating to a uniform system for measurements:</p>
+                  <ol>
+                    <li>Conférence générale des poids et mesures (CGPM), an intergovernmental conference of official delegates of member nations and the supreme authority for all actions;</li>
+                    <li>Comité international des poids et mesures (CIPM), consisting of selected scientists and metrologists, which prepares and executes the decisions of the CGPM and is responsible for the supervision of the International Bureau of Weights and Measures;</li>
+                    <li>Bureau international des poids et mesures (BIPM), a permanent laboratory and world centre of scientific metrology, the activities of which include the establishment of the basic standards and scales of the principal physical quantities and maintenance of the international prototype standards.</li>
+                  </ol>
+                  <p><h5>Metric systems other than the 'modern metric system' (SI)</h5><br>
+                  <b>The original French system</b></p>
+                  <p>The original French system somewhat continued the tradition of having separate base units for geometrically related dimensions, i.e. metre for lengths, are (100 m²) for areas, stere (1 m³) for volumes and dry capacities and litre (1 dm³) for liquid capacities. The base unit of mass was the gram it also included only few prefixes,</p>
+                  <p>Several national variants existed thereof with aliases for some common subdivisions. In general this entailed in redefinition of other units in use, e.g. 500-gram pounds or 10-kilometre miles. An example of these is mesures usuelles (or metrified English unit though never officially adopted). However it’s debatable whether such systems are true metric systems.</p>
+                  <p><b>Centimetre-gram-second systems</b></p>
+                  <p>Early on in the history of the metric system various centimetre gram second system of units (CGS) had been in use. These units were particularly convenient in science and technology.</p>
+                  <p><b>Metre-kilogram-second systems</b><p>
+                    <p>Later metric systems were based on the metre, kilogram and second (MKS) to improve the value of the units for practical applications. MKSC, metre-kilogram-second-coulomb systems and MKSA, metre-kilogram-second-ampere systems are extentions of these.</p>
+                    <p>The International System of Units (<i>Système international d'unités</i> or SI) is the current international standard metric system and the system most widely used around the world. It is based on the metre, kilogram, second, ampere, kelvin, candela and mole.</p>
+                    <p><b>Metre-tonne-second systems</b></p>
+                    <p>The metre-tonne-second system of units (MTS) was based on the metre, tonne and second. It was invented in France and mostly used in the Soviet Union from 1933 to 1955.</p>
+                    <p><b>Gravitational systems</b></p>
+                    <p>Gravitational systems use the kilogram-force as a base unit of force, with mass measured in a unit known as the hyl, TME, mug or metric slug.</p>
+                    <p><h5>Spelling variations</h5></p>
+                    <p>Several nations, notably the United States, typically use the spellings 'meter' and 'liter' instead of 'metre' and 'litre'. This is in keeping with standard American English spelling (for example, Americans also use 'center' rather than 'centre,' using the latter only rarely for its stylistic implications; see also American and British English differences). In addition, the official US spelling for the SI prefix 'deca' is 'deka'.</p>
+                    <p>The US government has approved these spellings for official use. In scientific contexts only the symbols are used; since these are universally the same, the differences do not arise in practice in scientific use.</p>
+                    <p>The unit 'gram' is also sometimes spelled 'gramme' in English-speaking countries other than the United States, though that is an older spelling and use is declining.</p>
+                    <p>This article is available under the terms of the GNU Free Documentation License. Original article can be found <a href="https://en.wikipedia.org/wiki/Metric_system">here</a>.</p>
+                  </div>
+                  <li><p><a href="#article3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="article3">The Meter</a> An article defining the meter as used in the metric system, both past and present.</p></li>
+                  <div class="collapse" id="article3">
+                    <h5>Metre</h5>
+                    <p>The metre <i>[French spelling]</i>, or meter <i>[English spelling]</i> (symbol: m) is the SI base unit of length. It is defined as the length of the path travelled by light in absolute vacuum during a time interval of 1/299,792,458 of a second.</p>
+                    <p>Adding SI prefixes to <i>metre</i> creates multiples and submultiples; for example <i>kilometre</i> (1000 metres; <i>kilo-</i> = 1000) and <i>nanometre</i> (one billionth of a metre; <i>nano-</i> = 1 / 1 000 000 000).</p>
+                    <p><h5>Conversions</h5></p>
+                    <p>1 metre is equivalent to:</p>
+                    <ul>
+                      <li>exactly 1/0.9144 yards (approximately 1.0936 yards)</li>
+                      <li>exactly 1/0.3048 feet (approximately 3.2808 feet)</li>
+                      <li>exactly 10000/254 inches (approximately 39.370 inches)</li>
+                    </ul>
+                    <p><h5>History</h5></p>
+                    <p>The word itself is from the Greek <i>metron</i> (μετρον), "a measure" via the French <i>mètre</i>. Its first recorded usage in English is from 1797.</p>
+                    <p>In the eighteenth century, there were two favoured approaches to the definition of the standard unit of length. One suggested defining the metre as the length of a pendulum with a half-period of one second. The other suggested defining the metre as one ten-millionth of the length of the earth's meridian along a quadrant (one-fourth the polar circumference of the earth). In 1791, the French Academy of Sciences selected the meridional definition over the pendular definition because of the slight variation of the force of gravity over the surface of the earth, which affects the period of a pendulum. In 1793, France adopted the metre, with this definition, as its official unit of length. Although it was later determined that the first prototype metre bar was short by a fifth of a millimetre due to miscalculation of the flattening of the earth, this length became the standard. So, the circumference of the Earth through the poles is approximately forty million metres.</p>
+                    <div class="row">
+                      <div class="col-8">
+                        <p>In the 1870s and in light of modern precision, a series of international conferences were held to devise new metric standards. The Metre Convention (Convention du Mètre) of 1875 mandated the establishment of a permanent International Bureau of Weights and Measures (BIPM: Bureau International des Poids et Mesures) to be located in Sèvres, France. This new organisation would preserve the new prototype metre and kilogram when constructed, distribute national metric prototypes, and would maintain comparisons between them and non-metric measurement standards. This organisation created a new prototype bar in 1889 at the first General Conference on Weights and Measures (CGPM: Conférence Générale des Poids et Mesures), establishing the <i>International Prototype Metre</i> as the distance between two lines on a standard bar of an alloy of ninety percent platinum and ten percent iridium, measured at the melting point of ice.</p>
+                      </div>
+                      <div class="col-4" style="border: 1px solid blue;">
+                        <span><img src="./images/some_article/bar.jpg" alt="">
+                          <p><i>International Prototype Metre</i> standard bar made of platinum-iridium. This was the standard until 1960, when the new SI system used a krypton-spectrum measurement as the base. In 1983 the current metre was defined by a relationship to the speed of light in a vacuum.</p>
+                        </span>
+                      </div>
+                      <p>In 1893, the standard metre was first measured with an interferometer by Albert A. Michelson, the inventor of the device and an advocate of using some particular wavelength of light as a standard of distance. By 1925, interferometry was in regular use at the BIPM. However, the International Prototype Metre remained the standard until 1960, when the eleventh CGPM defined the metre in the new SI system as equal to 1,650,763.73 wavelengths of the orange-red emission line in the electromagnetic spectrum of the krypton-86 atom in a vacuum. The original international prototype of the metre is still kept at the BIPM under the conditions specified in 1889.</p>
+                      <p>To further reduce uncertainty, the seventeenth CGPM of 1983 replaced the definition of the metre with its current definition, thus fixing the length of the metre in terms of time and the speed of light:</p>
+                      <p><i>The metre is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</i></p>
+                      <p>Note that this definition exactly fixes the speed of light in a vacuum at 299,792,458 metres per second. Definitions based on the physical properties of light are more precise and reproducible because the properties of light are considered to be universally constant</p>
+                      <p><b>Timeline of definition</b></p>
+                      <ul>
+                        <li><p>1790 May 8 — The French National Assembly decides that the length of the new metre would be equal to the length of a pendulum with a half-period of one second</p></li>
+                        <li><p>1791 March 30 — The French National Assembly accepts the proposal by the French Academy of Sciences that the new definition for the metre be equal to one ten-millionth of the length of the earth's meridian along a quadrant (one-fourth the polar circumference of the earth)</p></li>
+                        <li><p>1795 — Provisional metre bar constructed of brass.</p></li>
+                        <li><p>1799 December 10 — The French National Assembly specifies that the platinum metre bar, constructed on 23 June 1799 and deposited in the National Archives, as the final standards.</p></li>
+                        <li><p>1889 September 28 — The first CGPM defines the length as the distance between two lines on a standard bar of an alloy of platinum with ten percent iridium, measured at the melting point of ice.</p></li>
+                        <li><p>1927 October 6 — The seventh CGPM adjusts the definition of the length to be the distance, at 0 °C, between the axes of the two central lines marked on the prototype bar of platinum-iridium, this bar being subject to one standard atmosphere of pressure and supported on two cylinders of at least one centimetre diameter, symmetrically placed in the same horizontal plane at a distance of 571 millimetres from each other.</p></li>
+                        <li><p>1960 October 20 — The eleventh CGPM defines the length to be equal to 1,650,763.73 wavelengths in vacuum of the radiation corresponding to the transition between the 2p10 and 5d5 quantum levels of the krypton-86 atom.</p></li>
+                        <li><p>1983 October 21 — The seventeenth CGPM defines the length to be distance travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</p></li>
+                        <p><h5 class="text-center">SI multiples</h5></p>
+                      </ul>
+                      <table class="table table-bordered table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col">Multiple</th>
+                            <th scope="col" class="w-25">Name</th>
+                            <th scope="col" class="w-25">Symbol</th>
+                            <th scope="col">Multiple</th>
+                            <th scope="col" class="w-25">Name</th>
+                            <th scope="col" class="w-25">Symbol</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>10<sup>0</sup></td>
+                            <td>metre</td>
+                            <td><b>m</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>1</sup></td>
+                            <td>decametre</td>
+                            <td><b>dam</b></td>
+                            <td>10<sup>–1</sup></td>
+                            <td>decimetre</td>
+                            <td><b>dm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>2</sup></td>
+                            <td>hectometre</td>
+                            <td><b>hm</b></td>
+                            <td>10<sup>–2</sup></td>
+                            <td>centimetre</td>
+                            <td><b>cm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>3</sup></td>
+                            <td>kilometre</td>
+                            <td><b>km</b></td>
+                            <td>10<sup>–3</sup></td>
+                            <td>miliimetre</td>
+                            <td><b>mm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>6</sup></td>
+                            <td>megametre</td>
+                            <td><b>Mm</b></td>
+                            <td>10<sup>–6</sup></td>
+                            <td>micrometre</td>
+                            <td><b>µm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>9</sup></td>
+                            <td>gigametre</td>
+                            <td><b>Gm</b></td>
+                            <td>10<sup>–9</sup></td>
+                            <td>nanometre</td>
+                            <td><b>nm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>12</sup></td>
+                            <td>terametre</td>
+                            <td><b>Tm</b></td>
+                            <td>10<sup>–12</sup></td>
+                            <td>picometre</td>
+                            <td><b>pm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>15</sup></td>
+                            <td>petametre</td>
+                            <td><b>Pm</b></td>
+                            <td>10<sup>–15</sup></td>
+                            <td>femtometre</td>
+                            <td><b>fm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>18</sup></td>
+                            <td>exametre</td>
+                            <td><b>Em</b></td>
+                            <td>10<sup>–18</sup></td>
+                            <td>attometre</td>
+                            <td><b>am</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>21</sup></td>
+                            <td>zettametre</td>
+                            <td><b>Zm</b></td>
+                            <td>10<sup>–21</sup></td>
+                            <td>zeptometre</td>
+                            <td><b>zm</b></td>
+                          </tr>
+                          <tr>
+                            <td>10<sup>24</sup></td>
+                            <td>yottametre</td>
+                            <td><b>Ym</b></td>
+                            <td>10<sup>–24</sup></td>
+                            <td>yoctometre</td>
+                            <td><b>ym</b></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>This article is available under the terms of the GNU Free Documentation License. Original article can be found <a href="https://en.wikipedia.org/wiki/Metre">here</a>.</p>
+                    </div>
+                  </div>
+                  <li><p><a href="#article4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="article4">Traditional U.S. Units</a> An article describing the traditional units of measurement used throughout the United States.</p></li>
+                  <div class="collapse" id="article4">
+                    <h5>U.S. customary units</h5>
+                    <p>The <b>U.S. customary units</b>, commonly known in the United States as <b>English units</b> or <b>standard units</b>, are the non-SI (non-metric) units of measurement that are currently used in the U.S., in some cases alongside the International System of Units. This system of units is similar to, but not to be confused with, the Imperial system still used in the United Kingdom. Both systems derive from the evolution of local units over the centuries as a result of standardization efforts in England; the local units themselves mostly trace back to Roman and Anglo-Saxon units. Today, U.S. customary units are defined in terms of SI units.</p>
+                    <p>The official policy of the United States government is to designate the metric system of measurement as the preferred system of weights and measures for U.S. trade and commerce. This process is known as metrication, and is evident in labeling requirements on food products, for example. However, for various reasons, customary units are still widely used on consumer products and in industrial manufacturing; only in specific scientific contexts are SI units always preferred. Since everyday weights and measures are mostly non-SI, children in U.S. public schools are generally taught customary units before SI, although many schools are now attempting to teach SI units at an earlier age.</p>
+                    <p>In most Commonwealth countries, such as Australia and New Zealand, where metrication has been more forcefully imposed and has encountered less resistance from industry and consumer market forces, metrication is relatively complete, although some informal usage of non-SI units remains, particularly in Canada. Although increasingly metric, the UK has taken some time to change over, and retains use of non-SI units, particularly in informal situations. In more populated and developed British colonies, such as India, existing local weights and measures had been redefined based upon English units; some of which are still in limited use.</p>
+                    <p>Other countries have had customary units of their own, sometimes very similar in root (Germanic, Roman), name and value to the ones listed below—foot or pound, for instance—but frequently, similar terms designate quite different sizes. For example, miles ranged from 1 to 10 kilometers. The standardization of these units was of varying quality, but was often comparable to or better than the U.S. customary system of the 19th century. Most were later redefined in terms of kilogram and meter. Often, unlike English units, they were rounded to "nice" SI values, leading to their use in colloquial speech, alongside SI terms, into the present day.</p>
+                    <p>Historically, a wide range of non-SI units have been used in the United States. and United Kingdom, and in England before that, but many of these have fallen into disuse. This article only deals with the units commonly used or officially defined in the United States.</p>
+                    <p><b>Units of length</b><p>
+                      <p>The system for measuring length in the United States' customary system is based on the inch, foot, yard, and mile. However, for each of these units there exist two slightly different definitions, yielding two different systems of measure - <b>international measure</b>, and <b>U.S. survey measure</b>. The relationships between the different units within each measure is the same, but each measure has a slightly different definition in terms of metric units.</p>
+                      <p>One inch international measure is exactly 25.4 millimeters, while one inch U.S. survey measure is defined so that 39.37 inches is exactly 1 meter. For most applications, the difference is insignificant (about 3 millimeter per mile). International measure is used for everyday use, engineering, and commerce in the United States, while survey measure is used only for surveying.</p>
+                      <p>International measure uses the same definition of the units involved as is used in the UK and other Commonwealth countries. U.S. survey measure uses an older definition of these units which the United States used prior to adopting international measure.</p>
+                      <ul><p><li>1 inch (in) = 25.4 mm</li>
+                      <li>1 foot (ft) = 12 in = 30.48 cm</li>
+                      <li>1 yard (yd) = 3 ft = 91.44 cm</li>
+                      <li>1 mile (mi) = 5280 ft = 1760 yd = 1.609344 km</li></p>
+                      <li>1 rod (unit) (rd) (also called <i>pole</i> or <i>perch</i>) = 16.5 ft = 5.0292 m</li>
+                      <li>1 furlong (fur) = 40 rd = 660 ft = 201.168 </li>
+                      <li>1 mile (survey) = 8 fur = 5280 ft ≈ 1.609347 km</li>
+                    </ul>
+                    <p>Sometimes, for surveying purposes, units known as <i>Gunther's Chain Measure</i> (or equivalently <i>Surveyor's Chain Measure</i>) are used. These units are defined by survey feet as follows:</p>
+                    <ul>
+                      <li>1 link (li) = 7.92 in = 0.66 ft = 0.001 fur (approx. 201.168 mm)</li>
+                      <li>1 chain (ch) (Gunter's) = 100 li = 66 ft (approx. 20.1168 m)</li>
+                    </ul>
+                    <p>To measure depths at sea, fathoms are used:</p>
+                    <ul>
+                      <li>1 fathom = 6 feet = 1.8288 m</li>
+                      <li>1 cable length = 120 fathoms = 720 feet = 219.456 m (US Navy definition, there are others)</li>
+                    </ul>
+                    <p><b>Units of area</b></p>
+                    <p>The units of area in the U.S. customary system are mostly based on the units of length squared, e.g., square inch (sq in, 645.16 mm²). Since the U.S. customary system has two differing definitions of the foot (international and survey), there are also two differing definitions for the square foot.</p>
+                    <ul>
+                      <li>1 square foot (sq ft) = 144 sq in = 929.0304 cm²</li>
+                      <li>1 square rod (sq rd) = 272.25 sq ft = 25.29285264 m²</li>
+                      <li>1 acre = 10 sq ch = 1 fur × 1 ch = 160 sq rd = 43,560 sq ft = 4046.8564224 m²</li>
+                      <li>1 square mile (sq mi) = 27,878,400 sq ft = 3,097,600 sq yd = 640 acres = 2.589988110336 km²</li>
+                    </ul>
+                    <p>The Public Land Survey System, used to divide land in most of the United States, uses the survey mile to divide land into regular square parcels, such "sections" and "townships." However, these terms aren't used for general area measurement, instead used to indicate particular parcels of land in a rectangular grid.</p>
+                    <p><b>Units of capacity and volume</b></p>
+                    <p>The cubic inch, cubic foot and cubic yard are commonly used for measuring volume. In addition, there is one group of units for measuring volumes of liquids, and one for measuring volumes of dry material.</p>
+                    <p>Other than the cubic foot, cubic inch and cubic yard, these units are differently sized from the units in the Imperial system, although the names of the units are similar. Also, while the U.S. has separate systems for measuring the volumes of liquids and dry material, the Imperial system has one set of units for both.</p>
+                    <p>Technically speaking, since these units are defined in terms of the inch, it would make a difference whether international or survey measure was used. However, in practice, the difference between the two definitions would be imperceptible, and in any case in defining volumes international measure is used.</p>
+                    <p><b>Volume in general</b></p>
+                    <ul>
+                      <li>1 cubic inch (in³ or cu in) = 16.387064 ml (or cm³)</li>
+                      <li>1 cubic foot (ft³ or cu ft) = 1728 cu in ≈ 28.317 L</li>
+                      <li>1 cubic yard (yd³ or cu yd) = 27 cu ft ≈ 7.646 hL</li>
+                      <li>1 acre-foot = 43,560 cu ft ≈ 325,851 gallons ≈ 12,334.818 m³</li>
+                    </ul>
+                    <p><b>Liquid volume</b></p>
+                    <ul>
+                      <li>1 minim (min) = 1/480 fl oz ≈ 61.612 µL</li>
+                      <li>1 fluid dram (fl dr) = 1/8 fl oz = 60 min ≈ 3.697 mL</li>
+                      <li>1 fluid ounce (fl oz) = 1/128 gal = 8 fl dr ≈ 29.574 mL</li>
+                      <li>1 gill (gi) = 7.21875 cu in = 4 fl oz ≈ 118.294 mL</li>
+                      <li>1 cup = 2 gi = 8 fl oz ≈ 236.588 mL</li>
+                      <li>1 pint (pt) = 2 cups = 4 gi = 16 fl oz ≈ 473.176 mL</li>
+                      <li>1 fifth = 25.6 fl oz ≈ 757.082 mL</li>
+                      <li>1 quart (qt) = 2 pt = 32 fl oz ≈ 946.353 mL</li>
+                      <li>1 gallon (gal) = 231 cu in = 4 qt = 128 fl oz = 3.785411784 L</li>
+                    </ul>
+                    <p>The gill is basically a <i>paper unit</i> which is never actually used in the United States. Distilled liquor and wine were bottled in <i>fifths</i> until 1973; when the term "fifth" is used now it almost always means 750 mL.</p>
+                    <p><b>Dry volume</b></p>
+                    <ul>
+                      <li>1 pint (pt) ≈ 550.610 mL</li>
+                      <li>1 quart (qt) = 2 pt ≈ 1.101 L</li>
+                      <li>1 gallon (gal) = 4 qt = 268.8025 in³ = 4.404 842 803 2 L</li>
+                      <li>1 peck (pk) = 8 qt = 2 gal ≈ 8.81 L</li>
+                      <li>1 bushel (bu) = 2150.42 cu in = 4 pk ≈ 35.239 L</li>
+                    </ul>
+                    <p><b>Units of mass</b></p>
+                    <p>There have historically been four different English systems of mass: Tower weight, Troy weight, avoirdupois weight, and apothecaries weight. Tower weight fell out of use (due to legal prohibition) centuries ago, and was never used in the United States. Troy weight is still used to weigh precious metals. Apothecaries weight, once used in pharmacy, has been largely replaced by metric measurements. Avoirdupois weight is the primary system of mass in the U.S. customary system.</p>
+                    <p>The Avoirdupois units are legally defined as measures of mass, but the names of these units are sometimes applied to measures of force. For instance, in most contexts, the pound avoirdupois is used as a unit of mass, but in the realm of physics, the term "pound" can represent "pound-force" (a unit of force properly abbreviated as "lbf").</p>
+                    <p>Troy weight, avoirdupois weight and apothecaries weight are all defined in terms of the same basic unit, the grain, which is the same in all three systems. However, while each system has some overlap in the names of their units of measure (all have ounces and pounds), the relationship between the grain and these other units within each system varies. For example, in apothecaries and troy weight, the pound and ounce are the same, but are different from the pound and ounce in avoirdupois, in terms of their relationships to grains and to each other. The systems also have different units between the grain and ounce (apothecaries has scruple and dram, troy has pennyweight, and avoirdupois has just dram). The dram was once known as the <i>drachm</i>.</p>
+                    <p>To alleviate confusion, it is typical when publishing non-avoirdupois weights to mention the name of the system along with the unit. Precious metals, for example, are often weighed in "troy ounces", because just "ounce" would be more likely to be assumed to mean an ounce avoirdupois.</p>
+                    <p>The pound avoirdupois, which forms the basis of the U.S. customary system of mass, is defined as exactly 453.59237 grams. All the other units of mass are defined in terms of it.</p>
+                    <p>For the pound and smaller units, the U.S. customary system and the British Imperial system are identical. However, they differ when dealing with units larger than the pound. The definition of the pound avoirdupois in the British Imperial system is identical to that in the U.S. customary system.</p>
+                    <p><b>Avoirdupois weight</b></p>
+                    <ul>
+                      <li>1 grain (gr) = 64.79891 mg</li>
+                      <li>1 dram (dr) = 27 11/32 gr = 1/16 oz ≈ 1.772 g</li>
+                      <li>1 ounce (oz) = 16 dr = 437.5 gr ≈ 28.35 g</li>
+                      <li>1 pound (lb) = 16 oz = 7000 gr = 453.59237 g</li>
+                      <li>1 hundredweight (cwt) = 100 lb = 45.359 kg</li>
+                      <li>1 ton (t) = 20 cwt = 2000 lb = 907.18474 kg ≈ 0.907 t</li>
+                    </ul>
+                    <P>The ton and hundredweight above are referred to as the <i>short ton</i>, and the <i>short hundredweight</i>, to distinguish them from the British Imperial ton and hundredweight, which are larger and hence are referred to as the <i>long ton</i> and <i>long hundredweight</i>. The long ton has limited use in the United States.</P>
+                    <ul>
+                      <li>1 long hundredweight = 112 lb ≈ 50.802 kg</li>
+                      <li>1 long ton = 20 long cwt = 2240 lb ≈ 1016.047 kg ≈ 1.016 t</li>
+                    </ul>
+                    <p><b>Apothecaries' weight</b>
+                      <p>The grain has the same definition as for avoirdupois weight.</p>
+                      <ul>
+                        <li>1 scruple (s ap) = 20 gr ≈ 1.296 g</li>
+                        <li>1 dram apothecaries (dr ap) = 3 s ap ≈ 3.888 g</li>
+                        <li>1 ounce apothecaries (oz ap) = 1 oz t = 8 dr ap = 480 gr ≈ 31.103 g</li>
+                        <li>1 pound apothecaries (lb ap) = 1 lb t = 12 oz ap = 5760 gr ≈ 373.242 g</li>
+                      </ul>
+                      <p>The pound and ounce apothecaries are identical to the pound and ounce troy.<p>
+                        <p><b>Troy weight</b></p>
+                        <p>The grain has the same definition as for Avoirdupois weight.</p>
+                        <ul>
+                          <li>1 pennyweight (dwt) = 24 gr ≈ 1.555 g</li>
+                          <li>1 ounce troy (oz t) = 20 dwt = 480 gr ≈ 31.103 g</li>
+                          <li>1 pound troy (lb t) = 12 oz t = 5760 gr ≈ 373.242 g</li>
+                        </ul>
+                        <p><b>Cooking measures</b></p>
+                        <p>The most common cooking weights and measures in the U.S. are as follows:</p>
+                        <ul>
+                          <li>1 teaspoon = 1/3 tbsp = 1/6 fl oz ≈ 5 mL</li>
+                          <li>1 tablespoon (tbsp) = 1/2 fl oz = 4 fl dr ≈ 15 mL</li>
+                          <li>1 cup = 8 fl oz ≈ 240 mL</li>
+                          <li>1 stick (of butter) = 1/4 lb = 4 oz ≈ 115 g</li>
+                        </ul>
+                        <p><b>Grain measures</b></p>
+                        <p>These are derived from the volume measures and there have been more for other crops.>/
+                          <ul>
+                            <li>1 bushel (maize) = 56 lb ≈ 25.401 kg</li>
+                            <li>1 bushel (wheat) = 60 lb ≈ 27.216 kg</li>
+                          </ul>
+                          <p><b>Units of temperature</b></p>
+                          <p>Traditionally, degrees Fahrenheit are used in the United States to measure temperatures.</p>
+                          <ul>
+                            <li>Pure water freezes at 32 °F and boils at 212 °F at 1 atm.</li>
+                            <li>Water saturated with common salt freezes at -6.02 °F.</li>
+                            <li>Conversion formula: <img src="./images/some_article/acb.png" style="width: 60px; height: 40px;"></li>
+                          </ul>
+                          <p>This article is available under the terms of the GNU Free Documentation License. Original article can be found <a href="https://en.wikipedia.org/wiki/United_States_customary_units">here</a>.</p>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- About us -->
+        <!-- TEAM -->
+        <hr class="border-dark" width="95%">
+        <div data-spy="scroll" data-target="#navbar" data-offset="0">
+          <div class="container-fluid bg" id="about_us">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <div class="row">
+                  <div class="card-deck mb-2">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="card" id="card">
+                        <img src="./images/team/bao.jpg" class="card-img-top" alt="Bao" style="">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Vo Dong Chi Bao
+                          </h5>
+                          <p class="card-text">Team Leader
+                          </p>
+                          <a href="#member1" data-toggle="modal" class="">Veiw Detail
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="card">
+                        <img src="./images/team/khang.jpg" class="card-img-top" alt="Khang">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Tran Vi Khang
+                          </h5>
+                          <p class="card-text">Develop Member
+                          </p>
+                          <a href="#member2" class="" data-toggle="modal">Veiw Detail
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="card">
+                        <img src="./images/team/phuc.jpg" class="card-img-top" alt="Phuc">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Le Thien Phuc
+                          </h5>
+                          <p class="card-text">Develop Member
+                          </p>
+                          <a href="#member3"  data-toggle="modal" class="">Veiw Detail
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <div class="card">
+                        <img src="./images/team/hai.jpg" class="card-img-top" alt="Hai">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Tran Thanh Hai
+                          </h5>
+                          <p class="card-text">Develop Member
+                          </p>
+                          <a href="#member4" class=""  data-toggle="modal">Veiw Detail
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal detail of team -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <!-- Modal -->
+                  <div class="modal fade" id="member1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Member Team</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-4">
+                                <img src="./images/team/bao.jpg" class="img-fluid">
+                              <div class="mt-1 ml-1">
+                                <a href="https://www.facebook.com/vo.bao.0703"><i class="fab fa-facebook-square" style="color: color: #3b5998;"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-square" style="color: #EA4335"></i></a>
+                              </div>
+                            </div>
+                              <div class="col-8">
+                                <p>Name: Vo Dong Chi Bao</p>
+                                <p>Address: Binh Chanh, Ho Chi Minh, Viet Nam</p>
+                                <p>Birth Day: 07/03/2001</p>
+                                <p>Tel: 0925155005</p>
+                                <p>Gmail: csvobao@gmail.com</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <!-- Modal -->
+                  <div class="modal fade" id="member2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Member Team</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-4">
+                                <img src="./images/team/khang.jpg" class="img-fluid">
+                              <div class="mt-1 ml-2">
+                                <a href="https://www.facebook.com/khang.tranvi.9022"><i class="fab fa-facebook-square" style="color: color: #3b5998;"></i></a>
+                                <a href="https://www.instagram.com/ViKhangTrann/"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-square" style="color: #EA4335"></i></a>
+                              </div>
+                            </div>
+                              <div class="col-8">
+                                <p>Name: Tran Vi Khang</p>
+                                <p>Address: Thu Duc, Ho Chi Minh, Viet Nam</p>
+                                <p>Birth Day: 30/09/1998</p>
+                                <p>Tel: 0976017235</p>
+                                <p>Gmail: khang01279567920@gmail.com</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <!-- Modal -->
+                  <div class="modal fade" id="member3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Member Team</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-4">
+                                <img src="./images/team/phuc.jpg" class="img-fluid">
+                              <div class="mt-1 ml-1">
+                                <a href="https://www.facebook.com/thph114"><i class="fab fa-facebook-square" style="color: color: #3b5998;"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-square" style="color: #EA4335"></i></a>
+                              </div>
+                            </div>
+                              <div class="col-8">
+                                <p>Name: Le Thien Phuc</p>
+                                <p>Address: Quan 8, Ho Chi Minh, Viet Nam</p>
+                                <p>Birth Day: 11/04/99</p>
+                                <p>Tel: 0344902567</p>
+                                <p>Gmail: lethienphuc1141999@gmail.com</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+                <div class="container-fluid">
+          <div class="row">
+            <div class="col-8">
+              <div class="row">
+                <div class="col">
+                  <!-- Modal -->
+                  <div class="modal fade" id="member4" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">Member Team</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-4">
+                                <img src="./images/team/hai.jpg" class="img-fluid">
+                              <div class="mt-1 ml-1">
+                                <a href="https://www.facebook.com/profile.php?id=100009531983408"><i class="fab fa-facebook-square" style="color: color: #3b5998;"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-square" style="color: #EA4335"></i></a>
+                              </div>
+                            </div>
+                              <div class="col-8">
+                                <p>Name: Tran Thanh Hai</p>
+                                <p>Address: Go Vap, Ho Chi Minh, Viet Nam</p>
+                                <p>Birth Day: 30/04/2000</p>
+                                <p>Tel: 0344807752</p>
+                                <p>Gmail: Tranthanhhai7752@gmail.com</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr class="border-dark" width="95%">
+      <footer>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <div class="row">
+                <div class="col-4">
+                  <img src="./images/logo/Metriclogo.png" height="30" width="150" alt="Conversion">
+                  <div class="mt-3 pl-1">
+                    <a href=""><i class="fas fa-phone-square" style="color: #5dec5d;"></i></a>
+                    <a href=""><i class="fab fa-facebook-square" style="color: color: #3b5998;"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square" style="color: #1DA1F2;"></i></a>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <iframe style="width: 100%; height: auto;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3256476779143!2d106.66413881433687!3d10.786351561961025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23ca5d8db%3A0x24d414f45e5a523!2zNTkwIEPDoWNoIE3huqFuZyBUaMOhbmcgVMOhbSwgUGjGsOG7nW5nIDExLCBRdeG6rW4gMywgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1578364041691!5m2!1svi!2s" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-center" style="font-size: 13px;">&circledR; 2020 Metric Conversion 590 Cach Mang Thang 8 Street, District 3, Ho Chi Minh City, Viet Nam</p>
+        </footer>
+      </body>
+    </html>
